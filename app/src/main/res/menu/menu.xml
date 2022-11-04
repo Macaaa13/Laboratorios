@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_buscar"
+        android:icon="@drawable/baseline_search_24"
+        android:title="@string/action_buscar"
+        android:iconTint="@color/white"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+    />
+
+    <item
+        android:id="@+id/action_reservas"
+        android:icon="@drawable/baseline_bookmarks_24"
+        android:title="@string/action_reservas"
+        android:iconTint="@color/white"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/action_favoritos"
+        android:icon="@drawable/baseline_favorite_24"
+        android:title="@string/action_favoritos"
+        android:iconTint="@color/white"
+        android:orderInCategory="3"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/action_configuracion"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="@string/action_config"
+        android:iconTint="@color/white"
+        android:orderInCategory="4"
+        app:showAsAction="always"
+        />
+
+</menu>
