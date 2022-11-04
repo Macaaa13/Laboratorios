@@ -7,14 +7,20 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import com.example.laboratorios.databinding.FragmentResultadoBusquedaBinding;
+
 public class ResultadoBusquedaFragment extends Fragment {
 
+    //Constantes
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    //Atributos
     private String mParam1;
     private String mParam2;
+    private FragmentResultadoBusquedaBinding binding;
 
+    //Constructores
     public ResultadoBusquedaFragment() {
         // Required empty public constructor
     }
@@ -40,8 +46,9 @@ public class ResultadoBusquedaFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_resultado_busqueda, container, false);
+        binding = FragmentResultadoBusquedaBinding.inflate(inflater,container,false);
+        View view = binding.getRoot();
+        return view;
     }
 
 }
