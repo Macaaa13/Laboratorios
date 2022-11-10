@@ -1,13 +1,21 @@
 package com.example.laboratorios;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.NumberPicker;
+import android.widget.SeekBar;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.laboratorios.databinding.FragmentBusquedaBinding;
+import com.example.laboratorios.model.Ciudad;
+import com.example.laboratorios.repo.CiudadRepository;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class BusquedaFragment extends Fragment {
 
@@ -19,6 +27,12 @@ public class BusquedaFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private FragmentBusquedaBinding binding;
+    private NumberPicker npCapacidad;
+    private NumberPicker npCiudad;
+    private CiudadRepository cr;
+    private List<Ciudad> ciudades;
+    private String[] stringCiudades;
+    private SeekBar sbPrecio;
 
     //Constructores
     public BusquedaFragment() {
@@ -48,6 +62,21 @@ public class BusquedaFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentBusquedaBinding.inflate(inflater,container,false);
         View view = binding.getRoot();
+        //NumberPicker Capacidad
+        npCapacidad = binding.numberPickerCapacidad;
+        npCapacidad.setMinValue(1);
+        npCapacidad.setMaxValue(6);
+        //NumberPicker Ciudad
+        cr = new CiudadRepository();
+        ciudades = cr.listaCiudades();
+        stringCiudades = new String[ciudades.size()];
+        for(int i=0; i<ciudades.size(); i++){
+            stringCiudades[i] = ciudades.get(i).toString();
+        }
+        npCiudad = binding.numberPickerCiudad;
+        npCiudad.setMinValue(0);
+        npCiudad.setMaxValue(ciudades.size()-1);
+        npCiudad.setDisplayedValues(stringCiudades);
         return view;
     }
 

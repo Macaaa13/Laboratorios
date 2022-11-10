@@ -10,4 +10,6 @@
     <color name="primary">#673ab7</color>
     <color name="primary_light">#9a67ea</color>
     <color name="primary_dark">#320b86</color>
+    <color name="primary_more_dark">#25046A</color>
+    <color name="primary_even_more_dark">#160242</color>
 </resources>

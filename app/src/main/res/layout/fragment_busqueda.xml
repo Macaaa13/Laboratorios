@@ -1,12 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_personalizado"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTipoAlojamiento"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textHeight"
+                android:text="@string/tipo_alojam"
+                android:gravity="center"
+
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/toggleButtonDepto"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_personalizado"
+                    android:textOff="@string/boton_departamento"
+                    android:textOn="@string/boton_departamento" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButtonHotel"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/buttonHeight"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_personalizado"
+                    android:textOff="@string/boton_hotel"
+                    android:textOn="@string/boton_hotel" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewCapacidad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textHeight"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cant_personas"
+                android:textSize="@dimen/textSize"/>
+
+            <NumberPicker
+                android:id="@+id/numberPickerCapacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></NumberPicker>
+
+            <Switch
+                android:id="@+id/switchWifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/white"
+                android:text="@string/wifi" />
+
+            <TextView
+                android:id="@+id/textViewCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textHeight"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/ciudad"
+                android:textSize="@dimen/textSize"/>
+
+            <NumberPicker
+                android:id="@+id/numberPickerCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></NumberPicker>
+
+            <TextView
+                android:id="@+id/textViewPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textHeight"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/rango_precios"
+                android:textSize="@dimen/textSize"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/seekBarPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:valueFrom="20000"
+                android:valueTo="200000"
+                android:stepSize="10000"
+                app:labelStyle="@style/SliderStyle"
+                app:labelBehavior="withinBounds"/>
+
+            <Button
+                android:id="@+id/buttonResetear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_resetear" />
+
+            <Button
+                android:id="@+id/buttonBuscar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_buscar" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </LinearLayout>

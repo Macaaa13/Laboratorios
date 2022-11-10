@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Laboratorios</string>
+    <string name="app_name">Alojamientos</string>
     <string name="resultado_busqueda">Resultado busqueda fragment</string>
     <string name="form_busqueda">FORMULARIO busqueda fragment</string>
     <string name="detalle_alojamiento">DETALLE alojamiento fragment</string>
@@ -7,4 +7,14 @@
     <string name="action_favoritos">Favoritos</string>
     <string name="action_reservas">Reservas</string>
     <string name="action_config">Configuracion</string>
+    <string name="boton_hotel">Hotel</string>
+    <string name="boton_departamento">Departamento</string>
+    <string name="tipo_alojam">Tipo de alojamiento</string>
+    <string name="cant_personas">Capacidad</string>
+    <string name="wifi">Servicio Wifi</string>
+    <string name="ciudad">Ubicacion</string>
+    <string name="rango_precios">Precio</string>
+    <string name="button_buscar">Buscar</string>
+    <string name="button_resetear">Resetear</string>
+
 </resources>

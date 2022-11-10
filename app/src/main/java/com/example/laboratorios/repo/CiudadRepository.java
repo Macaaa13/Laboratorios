@@ -1,5 +1,7 @@
 package com.example.laboratorios.repo;
 
+import androidx.annotation.NonNull;
+
 import com.example.laboratorios.model.Ciudad;
 
 import java.util.List;
@@ -16,5 +18,6 @@ public class CiudadRepository {
     public List<Ciudad> listaCiudades(){
         return  _CIUDADES;
     }
+
 
 }

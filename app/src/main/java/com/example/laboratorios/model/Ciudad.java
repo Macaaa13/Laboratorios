@@ -41,4 +41,10 @@ public class Ciudad {
         this.abreviatura = abreviatura;
     }
 
+    //toString
+
+    @Override
+    public String toString() {
+        return nombre;
+    }
 }

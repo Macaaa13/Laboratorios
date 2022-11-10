@@ -4,10 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/background_personalizado.xml" value="0.14" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/baseline_search_24.xml" value="0.1" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/baseline_search_white_24.xml" value="0.1" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/btn_hotel_personalizado.xml" value="0.14" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/btn_personalizado.xml" value="0.14" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/btn_shape.xml" value="0.104" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/toggle_btn.xml" value="0.106" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/toggle_button.xml" value="0.104" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/font/font.xml" value="0.25925925925925924" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/layout/activity_main.xml" value="0.2259963768115942" />
-        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/layout/fragment_busqueda.xml" value="0.2" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/layout/fragment_busqueda.xml" value="0.264" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/layout/fragment_detalle_alojamiento.xml" value="0.12132725430597771" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/layout/fragment_resultado_busqueda.xml" value="0.10004177109440267" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/menu/menu.xml" value="0.25364583333333335" />
