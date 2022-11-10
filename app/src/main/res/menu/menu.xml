@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/action_buscar"
-        android:icon="@drawable/baseline_search_24"
+        android:icon="@drawable/ic_baseline_search_24"
         android:title="@string/action_buscar"
         android:iconTint="@color/white"
         android:orderInCategory="1"
@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/action_reservas"
-        android:icon="@drawable/baseline_bookmarks_24"
+        android:icon="@drawable/ic_baseline_bookmarks_24"
         android:title="@string/action_reservas"
         android:iconTint="@color/white"
         android:orderInCategory="2"
@@ -22,7 +22,7 @@
 
     <item
         android:id="@+id/action_favoritos"
-        android:icon="@drawable/baseline_favorite_24"
+        android:icon="@drawable/ic_baseline_favorite_24"
         android:title="@string/action_favoritos"
         android:iconTint="@color/white"
         android:orderInCategory="3"
@@ -31,7 +31,7 @@
 
     <item
         android:id="@+id/action_configuracion"
-        android:icon="@drawable/baseline_settings_24"
+        android:icon="@drawable/ic_baseline_settings_24"
         android:title="@string/action_config"
         android:iconTint="@color/white"
         android:orderInCategory="4"

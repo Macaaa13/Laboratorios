@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_personalizado"
+    android:background="@drawable/ic_background_personalizado"
     android:orientation="vertical">
 
     <ScrollView
@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/buttonHeight"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_personalizado"
+                    android:background="@drawable/ic_btn_personalizado"
                     android:textOff="@string/boton_departamento"
                     android:textOn="@string/boton_departamento" />
 
@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/buttonHeight"
                     android:layout_weight="1"
-                    android:background="@drawable/btn_personalizado"
+                    android:background="@drawable/ic_btn_personalizado"
                     android:textOff="@string/boton_hotel"
                     android:textOn="@string/boton_hotel" />
 
@@ -96,7 +96,7 @@
                 android:textSize="@dimen/textSize"/>
 
             <com.google.android.material.slider.Slider
-                android:id="@+id/seekBarPrecio"
+                android:id="@+id/sliderPrecio"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:valueFrom="20000"

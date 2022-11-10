@@ -16,5 +16,8 @@
     <string name="rango_precios">Precio</string>
     <string name="button_buscar">Buscar</string>
     <string name="button_resetear">Resetear</string>
+    <string name="button_nuevaBusqueda">Nueva busqueda</string>
+    <string name="textView_Alojamiento">Alojamiento</string>
+    <string name="textView_Precio">Precio:</string>
 
 </resources>

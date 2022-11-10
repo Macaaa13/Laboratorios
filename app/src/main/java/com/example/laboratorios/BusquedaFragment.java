@@ -5,14 +5,19 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.SeekBar;
+import android.widget.Switch;
+import android.widget.ToggleButton;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.laboratorios.databinding.FragmentBusquedaBinding;
 import com.example.laboratorios.model.Ciudad;
 import com.example.laboratorios.repo.CiudadRepository;
+import com.google.android.material.slider.Slider;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,15 +29,17 @@ public class BusquedaFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     //Atributos
-    private String mParam1;
-    private String mParam2;
+    private String mParam1, mParam2;
     private FragmentBusquedaBinding binding;
-    private NumberPicker npCapacidad;
-    private NumberPicker npCiudad;
+    private NumberPicker npCapacidad, npCiudad;
     private CiudadRepository cr;
     private List<Ciudad> ciudades;
     private String[] stringCiudades;
     private SeekBar sbPrecio;
+    private Button botonResetear, botonBuscar;
+    private ToggleButton tbDepto, tbHotel;
+    private Slider sliderPrecio;
+    private Switch switchWifi;
 
     //Constructores
     public BusquedaFragment() {
@@ -77,6 +84,31 @@ public class BusquedaFragment extends Fragment {
         npCiudad.setMinValue(0);
         npCiudad.setMaxValue(ciudades.size()-1);
         npCiudad.setDisplayedValues(stringCiudades);
+        //Button Resetear
+        tbDepto = binding.toggleButtonDepto;
+        tbHotel = binding.toggleButtonHotel;
+        botonResetear = binding.buttonResetear;
+        sliderPrecio = binding.sliderPrecio;
+        switchWifi = (Switch) binding.switchWifi;
+        botonResetear.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                tbDepto.setChecked(false);
+                tbHotel.setChecked(false);
+                sliderPrecio.setValue(20000);
+                switchWifi.setChecked(false);
+                npCapacidad.setValue(0);
+                npCiudad.setValue(0);
+            }
+        });
+        //Button Buscar
+        botonBuscar = binding.buttonBuscar;
+        botonBuscar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(BusquedaFragment.this).navigate(R.id.action_busquedaFragment_to_resultadoBusquedaFragment);
+            }
+        });
         return view;
     }
 
