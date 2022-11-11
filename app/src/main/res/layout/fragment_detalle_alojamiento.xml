@@ -7,17 +7,119 @@
     android:background="@drawable/ic_background_personalizado"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textViewAlojamiento"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:gravity="center"
-        android:text="@string/textView_Alojamiento"/>
+        android:orientation="horizontal">
 
-    <ImageView
-        android:id="@+id/imageView"
+        <TextView
+            android:id="@+id/textViewAlojamiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/textView_Alojamiento"
+            android:textSize="@dimen/tittleTextSize" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonAlojamientoFavorito"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/white"
+            android:background="@drawable/ic_toggle_favorite"
+            android:textOn=""
+            android:textOff="" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:orientation="vertical"
+        android:background="@drawable/ic_background_personalizado_3">
+
+        <TextView
+            android:id="@+id/textViewDescripcionAlojamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_DescripcionAlojamiento" />
+
+        <TextView
+            android:id="@+id/textViewCapacidadAlojamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_CapacidadAlojamiento" />
+
+        <TextView
+            android:id="@+id/textViewPrecioBaseAlojamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/textView_Precio" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ic_background_personalizado_2">
+
+        <Switch
+            android:id="@+id/switchReservar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/switch_Reservar" />
+
+        <TextView
+            android:id="@+id/textViewFechaIngreso"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/borde_texto"
+            android:gravity="center"
+            android:text="@string/textView_FechaIngreso"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewFechaSalida"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/borde_texto"
+            android:gravity="center"
+            android:enabled="false"
+            android:text="@string/textView_FechaSalida"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/textViewCantidadPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/textHeight"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/textView_CantidadPersonas"
+            android:textSize="@dimen/tittleTextSize"/>
+
+        <NumberPicker
+            android:id="@+id/numberPickerCantidadPersonas"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            ></NumberPicker>
+
+        <TextView
+            android:id="@+id/textViewPrecioTotalAlojamiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/textView_Precio" />
+
+        <Button
+            android:id="@+id/buttonRealizarReserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/button_RealizarReserva" />
+
+
+    </LinearLayout>
+
 </LinearLayout>

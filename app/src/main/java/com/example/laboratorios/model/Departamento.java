@@ -1,5 +1,7 @@
 package com.example.laboratorios.model;
 
+import android.widget.ImageView;
+
 public class Departamento extends Alojamiento {
 
     //Atributos

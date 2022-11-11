@@ -21,8 +21,7 @@
                 android:layout_height="@dimen/textHeight"
                 android:text="@string/tipo_alojam"
                 android:gravity="center"
-
-                android:textSize="20dp" />
+                android:textSize="@dimen/tittleTextSize"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -35,6 +34,7 @@
                     android:layout_height="@dimen/buttonHeight"
                     android:layout_weight="1"
                     android:background="@drawable/ic_btn_personalizado"
+                    android:textStyle="bold"
                     android:textOff="@string/boton_departamento"
                     android:textOn="@string/boton_departamento" />
 
@@ -44,6 +44,7 @@
                     android:layout_height="@dimen/buttonHeight"
                     android:layout_weight="1"
                     android:background="@drawable/ic_btn_personalizado"
+                    android:textStyle="bold"
                     android:textOff="@string/boton_hotel"
                     android:textOn="@string/boton_hotel" />
 
@@ -56,7 +57,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/cant_personas"
-                android:textSize="@dimen/textSize"/>
+                android:textSize="@dimen/tittleTextSize"/>
 
             <NumberPicker
                 android:id="@+id/numberPickerCapacidad"
@@ -68,7 +69,7 @@
                 android:id="@+id/switchWifi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/textSize"
+                android:textSize="@dimen/tittleTextSize"
                 android:textColor="@color/white"
                 android:text="@string/wifi" />
 
@@ -79,7 +80,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/ciudad"
-                android:textSize="@dimen/textSize"/>
+                android:textSize="@dimen/tittleTextSize"/>
 
             <NumberPicker
                 android:id="@+id/numberPickerCiudad"
@@ -93,7 +94,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/rango_precios"
-                android:textSize="@dimen/textSize"/>
+                android:textSize="@dimen/tittleTextSize"/>
 
             <com.google.android.material.slider.Slider
                 android:id="@+id/sliderPrecio"
@@ -109,12 +110,14 @@
                 android:id="@+id/buttonResetear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="@string/button_resetear" />
 
             <Button
                 android:id="@+id/buttonBuscar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:text="@string/button_buscar" />
 
         </LinearLayout>

@@ -7,10 +7,18 @@
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/background_personalizado.xml" value="0.14" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/baseline_search_24.xml" value="0.1" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/baseline_search_white_24.xml" value="0.1" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/borde_texto.xml" value="0.1375" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/btn_hotel_personalizado.xml" value="0.14" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/btn_personalizado.xml" value="0.14" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/btn_shape.xml" value="0.104" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_background_personalizado.xml" value="0.1375" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_background_personalizado_2.xml" value="0.1375" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_background_personalizado_3.xml" value="0.1375" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_baseline_star_border_24.xml" value="0.14" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_btn_personalizado.xml" value="0.1375" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_habitacion_background.xml" value="0.1375" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_habitacionhotel_background.xml" value="0.1235" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1475" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/ic_toggle_favorite.xml" value="0.14" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/toggle_btn.xml" value="0.106" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/drawable/toggle_button.xml" value="0.104" />
@@ -22,6 +30,9 @@
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/layout/fragment_detalle_alojamiento.xml" value="0.264" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/layout/fragment_resultado_busqueda.xml" value="0.1" />
         <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/menu/menu.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/mipmap-anydpi-v26/ic_departamento_round.xml" value="0.1375" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1375" />
+        <entry key="..\:/Users/macam/AndroidStudioProjects/Laboratorios/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1235" />
       </map>
     </option>
   </component>

@@ -1,5 +1,6 @@
 package com.example.laboratorios.model;
 
+import android.media.Image;
 import android.os.Parcelable;
 import android.widget.ImageView;
 
@@ -13,6 +14,7 @@ public abstract class Alojamiento implements Serializable {
     protected String descripcion;
     protected Integer capacidad;
     protected Double precioBase;
+    protected Boolean favorito;
 
     //Constructores
     public Alojamiento(){
@@ -25,6 +27,7 @@ public abstract class Alojamiento implements Serializable {
         this.descripcion = descripcion;
         this.capacidad = capacidad;
         this.precioBase = precioBase;
+        this.favorito = false;
     }
 
     //Getters y Setters
@@ -48,5 +51,29 @@ public abstract class Alojamiento implements Serializable {
 
     public void setPrecioBase(Double precioBase) {
         this.precioBase = precioBase;
+    }
+
+    public Boolean getFavorito() {
+        return favorito;
+    }
+
+    public void setFavorito(Boolean favorito) {
+        this.favorito = favorito;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getCapacidad() {
+        return capacidad;
+    }
+
+    public void setCapacidad(Integer capacidad) {
+        this.capacidad = capacidad;
     }
 }

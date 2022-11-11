@@ -33,7 +33,7 @@
                     android:layout_weight="1"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:textSize="@dimen/textSize"
+                    android:textSize="@dimen/tittleTextSize"
                     android:text="@string/textView_Alojamiento" />
 
                 <ToggleButton
@@ -51,8 +51,7 @@
                 android:id="@+id/imageViewAlojamiento"
                 android:layout_width="wrap_content"
                 android:layout_height="100dp"
-                android:layout_gravity="center"
-                tools:srcCompat="@drawable/ic_departamento1" />
+                android:layout_gravity="center"/>
 
             <TextView
                 android:id="@+id/textViewPrecioAlojamiento"

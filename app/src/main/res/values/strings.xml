@@ -19,5 +19,12 @@
     <string name="button_nuevaBusqueda">Nueva busqueda</string>
     <string name="textView_Alojamiento">Alojamiento</string>
     <string name="textView_Precio">Precio:</string>
+    <string name="textView_DescripcionAlojamiento">Descripcion:</string>
+    <string name="textView_CapacidadAlojamiento">Capacidad:</string>
+    <string name="switch_Reservar">¿Realizar reserva?</string>
+    <string name="textView_FechaIngreso">Fecha de ingreso</string>
+    <string name="textView_FechaSalida">Fecha de salida</string>
+    <string name="button_RealizarReserva">Reservar</string>
+    <string name="textView_CantidadPersonas">Cantidad de personas</string>
 
 </resources>

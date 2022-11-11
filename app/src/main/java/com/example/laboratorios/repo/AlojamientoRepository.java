@@ -1,5 +1,9 @@
 package com.example.laboratorios.repo;
 
+import android.media.Image;
+import android.widget.ImageView;
+
+import com.example.laboratorios.R;
 import com.example.laboratorios.model.Alojamiento;
 import com.example.laboratorios.model.Departamento;
 import com.example.laboratorios.model.Habitacion;
