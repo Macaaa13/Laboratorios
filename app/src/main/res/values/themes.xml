@@ -23,4 +23,5 @@
         <item name="backgroundTint">@color/white</item>
         <item name="android:textColor">@color/primary_even_more_dark</item>
     </style>
+
 </resources>
