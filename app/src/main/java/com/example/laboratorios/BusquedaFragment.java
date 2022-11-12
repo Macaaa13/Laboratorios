@@ -101,6 +101,13 @@ public class BusquedaFragment extends Fragment {
                 npCiudad.setValue(0);
             }
         });
+        Button pref = binding.buttonPreferencias;
+        pref.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                NavHostFragment.findNavController(BusquedaFragment.this).navigate(R.id.action_busquedaFragment_to_settingsFragment);
+            }
+        });
         //Button Buscar
         botonBuscar = binding.buttonBuscar;
         botonBuscar.setOnClickListener(new View.OnClickListener() {

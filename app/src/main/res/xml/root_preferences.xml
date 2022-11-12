@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Datos personales">
+
+        <EditTextPreference
+            android:defaultValue="false"
+            android:key="editTextCorreo"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Correo electronico" />
+        <EditTextPreference
+            android:defaultValue="Default value"
+            android:key="editTextCUIT"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            app:summary="Descripcion"
+            android:title="Numero de CUIT" />
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Metodo de pago">
+
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/metodos_de_pago"
+            android:entryValues="@array/metodos_de_pago"
+            android:key="listMetodoPago"
+            android:title="Favorito" />
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/moneda"
+            android:entryValues="@array/moneda"
+            android:key="listMoneda"
+            android:enabled="false"
+            android:title="Moneda" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Configuracion">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switchNotificaciones"
+            android:title="Switch preference" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="checkBoxGuardarInfo"
+            android:title="Check box preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

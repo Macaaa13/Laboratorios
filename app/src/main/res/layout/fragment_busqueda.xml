@@ -120,6 +120,12 @@
                 android:textStyle="bold"
                 android:text="@string/button_buscar" />
 
+            <Button
+                android:id="@+id/buttonPreferencias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Button" />
+
         </LinearLayout>
     </ScrollView>
 
